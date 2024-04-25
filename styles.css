@@ -1,0 +1,491 @@
+:root {
+    --body-black: #000000;
+    --light-background: #F2F4F3;
+    --purple-title-text: #67029A;
+    --gray-outline: #CCCCCC;
+    --blue-button: #5363F3;
+    --light-purple-background: #D8DAEC;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+    background: var(--light-background);
+    line-height: 24px;
+    font-size: 20px;
+    display: block;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.eyebrow-text {
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 15px auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER*/
+.header {
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.header img{
+    width: 150px;
+    height: auto;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .wrapper .nav-links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+}
+
+.header .wrapper .nav-links .nav-link{
+    text-decoration: none;
+    color: var(--body-black);
+}
+
+.header .wrapper .nav-links .nav-link:hover {
+    color: var(--purple-title-text)
+}
+
+.header .nav-logo {
+    margin-top: 8px;
+}
+
+.nav-links #stargazers-count {
+    background: #fff; 
+    color: #24292f;
+    border: 1px solid #c5c5c5;
+    border-radius: 0 0.25em 0.25em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    height: 36px;
+    padding: 9px 10px 0px 10px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.nav-links #star {
+    background: #ebf0f4; 
+    color: #24292f;
+    border: 1px solid #c5c5c5;
+    border-right: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    border-radius: 0.25em 0 0 0.25em;
+    font-size: 16px;
+    padding: 5px 10px 0 10px;
+}
+
+.nav-links #star:hover {
+    background: #e3e8ec; 
+}
+
+.nav-links #stargazers-count:hover {
+    color: #2F68FC;
+}
+
+.nav-links .star-count {
+    display: flex;
+    gap: 0;
+}
+
+.nav-links #star::before {
+    background-image: url(assets/star.png);
+    background-size: 16px 16px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 16px; 
+    height: 16px;
+    content: "";
+
+}
+
+/*END OF HEADER*/
+
+/*HERO*/
+.our-vision .wrapper {
+    margin-bottom: 100px;
+}
+
+.our-vision .wrapper img{
+    width: 177px;
+    height: auto;
+}
+
+
+.our-vision .hero-content {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.our-vision .hero-content .emphasis{
+    color: var(--purple-title-text);
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.our-vision .hero-sub-content {
+    font-size: 20px;
+    color: #414141;
+    font-weight: 200;
+    line-height: normal;
+    max-width: 70%;
+    border-left: 2px solid #414141;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+.our-vision .hero-btn .btn{
+    margin-left: 0px;
+}
+
+.our-vision .hero-btn {
+    display: flex;
+    gap: 25px;
+}
+
+/*END OF HERO*/
+
+/*BUTTONS*/
+.btn {
+    padding: 15px 40px;
+    border-radius: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 200;
+    margin: 15px;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+}
+.btn.dark.nav{
+    padding: 10px 30px;
+    margin: 0px;
+}
+
+.btn.dark{
+    background-color: var(--purple-title-text);
+    color: var(--light-background);
+    transition-duration: 0.3s;
+}
+
+.btn.dark:hover{
+    background-color: var(--body-black);
+    color: var(--light-background)
+}
+
+.btn.light{
+    border: 1px solid black;
+    color: var(--body-black);
+    background-color: var(--light-background);
+    transition-duration: 0.3s;
+    padding: 15px 25px;
+ }
+ 
+ .btn.light:hover {
+     color: var(--light-background);
+     background-color: var(--body-black);
+ }
+
+ .btn-square {
+    padding: 25px;
+    padding-bottom: 20px; 
+    border-radius: 15px;
+    display: inline-block;
+    background-color: #6953F3;
+    transition-duration: 0.3s;
+}
+
+.btn-square:hover {
+    background-color: var(--body-black);
+}
+/*END OF BUTTONS*/
+
+/*DAFT*/
+.our-open-source-engine .daft-card-info{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.our-open-source-engine .daft-diagram{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.our-open-source-engine .daft-diagram .desktop{
+    max-width: 80%;
+    margin-top: 25px;
+}
+.our-open-source-engine .daft-diagram .mobile{
+    display: none;
+}
+
+
+/*END OF DAFT*/
+
+/*OUR TEAM*/
+.our-team .wrapper {
+    margin: 100px auto;
+}
+
+.our-team .team-info {
+    font-weight: 200;
+    width: 60%;
+}
+
+.our-team .team-cards {
+    display: flex;
+    margin-top: 25px;
+}
+
+.our-team .team-cards .team-card{
+    max-width: 25%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.our-team .team-cards .team-card .name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.our-team .team-cards .team-card .fun-fact{
+    font-size: 16px;
+    font-weight: 200;
+    color: #414141;
+}
+
+.our-team .team-cards .team-card img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.our-team .team-cards .team-card .team-social img{
+    width: 20px;
+    height: auto;
+}
+/*END OF OUR TEAM*/
+
+
+/*JOIN US*/
+.join-us .wrapper {
+    text-align: center;
+    margin-bottom: 125px;
+    margin-top: 50px;
+}
+.join-us .join-us-headline {
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.join-us .join-us-headline .italicize{
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    color: var(--purple-title-text);
+}
+
+.join-us .join-us-content {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/*END OF JOIN US*/
+
+/*FOOTER*/
+.footer .wrapper {
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-logo .social-image {
+    width: 139px;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px; 
+    margin-top: 20px;
+}
+
+.footer-social .social-image{
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    margin: 40px auto;
+}
+
+/*END OF FOOTER*/
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 925px) {
+    .our-vision .wrapper {
+        margin-bottom: 75px;
+    }
+
+    .our-team .team-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team .team-cards .team-card{
+        max-width: 75%;
+        padding: 10px;
+    }
+
+    .our-team .team-info {
+        width: 100%;
+    }
+
+    .our-open-source-engine .daft-diagram .desktop{
+        max-width: 90%;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .our-vision .hero-content {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .join-us .join-us-headline {
+        font-size: 36px;
+    }
+
+    .join-us .join-us-content {
+        font-size: 24px;
+    }
+
+    .our-vision .wrapper {
+        margin-bottom: 50px;
+    }
+
+    .our-vision .hero-sub-content {
+        max-width: 90%;
+    }
+
+    .our-open-source-engine .daft-diagram .desktop{
+        display: none;
+    }
+    .our-open-source-engine .daft-diagram .mobile{
+        display: inline;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 570px) {
+    .btn-square {
+        padding: 20px;
+        padding-bottom: 15px;
+    }
+
+    .eyebrow-text {
+        font-size: 20px;
+    }
+
+    .footer-logo .social-image {
+        width: 100px;
+        height: auto;
+    }
+    
+    .footer-social {
+        gap: 20px; 
+    }
+    
+    .footer-social .social-image{
+        width: 20px;
+        height: 20px;
+    }
+
+    .wrapper {
+        padding: 0 25px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .our-vision .hero-sub-content {
+        font-size: 16px;
+    }
+
+    .our-vision .hero-btn {
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 0px;
+    }
+
+    .header img {
+        width: 100px;
+        height: auto;
+    }
+
+    .header .wrapper .nav-links {
+        font-size: 18px;
+    }
+
+    .nav-links #stargazers-count {
+        font-size: 14px;
+    
+    }
+    
+    .nav-links #star {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-links .star-count {
+        display: none;
+    }
+}

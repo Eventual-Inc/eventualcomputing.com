@@ -153,7 +153,6 @@ html {
 .our-vision .hero-content .emphasis{
     color: var(--purple-title-text);
     font-family: "Inter", sans-serif;
-    font-style: italic;
     font-weight: 400;
 }
 
@@ -313,10 +312,9 @@ html {
     font-weight: 300;
 }
 
-.join-us .join-us-headline .italicize{
+.join-us .join-us-headline .today{
     font-weight: 400;
     font-family: "Inter", sans-serif;
-    font-style: italic;
     color: var(--purple-title-text);
 }
 

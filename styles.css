@@ -269,11 +269,13 @@ html {
 
 .our-team .team-cards {
     display: flex;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    justify-content: center;
+    align-items: top;
 }
 
 .our-team .team-cards .team-card{
-    max-width: 25%;
+    max-width: 20%;
     padding: 10px;
     margin-bottom: 25px;
 }
@@ -295,7 +297,7 @@ html {
 }
 
 .our-team .team-cards .team-card .team-social img{
-    width: 20px;
+    width: 25px;
     height: auto;
 }
 /*END OF OUR TEAM*/

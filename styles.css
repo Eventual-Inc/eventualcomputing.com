@@ -270,8 +270,8 @@ html {
 .our-team .team-cards {
     display: flex;
     /* margin-top: 25px; */
-    justify-content: center;
-    align-items: top;
+    justify-content: center; /* Horizontally center the flex items */
+    align-items: top; /* Vertically top align the flex items */
 }
 
 .our-team .team-cards .team-card{

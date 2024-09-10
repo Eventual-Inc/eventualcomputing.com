@@ -254,11 +254,26 @@ html {
     display: none;
 }
 
-
 /*END OF DAFT*/
 
 /* TRUST BAR */
+.trust-bar .trust-list .trust-item .trust-image {
+    height: 60px;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid var(--gray-outline);
+}
 
+
+.trust-bar .trust-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center the flex items */
+}
+
+/* END OF TRUST BAR */
 
 /*OUR TEAM*/
 .our-team .wrapper {

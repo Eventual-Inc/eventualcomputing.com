@@ -272,9 +272,10 @@ html {
     /* margin-top: 25px; */
     justify-content: center; /* Horizontally center the flex items */
     align-items: top; /* Vertically top align the flex items */
+    line-height: 20px;
 }
 
-.our-team .team-cards .team-card{
+.our-team .team-cards .team-card {
     max-width: 20%;
     padding: 10px;
     margin-bottom: 25px;
@@ -283,11 +284,23 @@ html {
 .our-team .team-cards .team-card .name{
     font-size: 20px;
     font-weight: 400;
+    color: #414141;
+    margin-bottom: 4px;
+}
+
+.our-team .team-cards .team-card .role{
+    font-size: 16px;
+    font-weight: 200;
+    color: #414141;
+    margin-top: 0;
+    margin-bottom: 4px;
+    
 }
 
 .our-team .team-cards .team-card .fun-fact{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
+    font-style: italic;
     color: #414141;
 }
 

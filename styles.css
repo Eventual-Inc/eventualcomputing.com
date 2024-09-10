@@ -243,7 +243,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .our-open-source-engine .daft-diagram .desktop{
@@ -259,7 +259,7 @@ html {
 
 /*OUR TEAM*/
 .our-team .wrapper {
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
 .our-team .team-info {
@@ -278,7 +278,7 @@ html {
 .our-team .team-cards .team-card {
     max-width: 20%;
     padding: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .our-team .team-cards .team-card .name{

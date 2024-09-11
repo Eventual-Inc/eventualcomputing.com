@@ -243,7 +243,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .our-open-source-engine .daft-diagram .desktop{
@@ -259,7 +259,7 @@ html {
 
 /*OUR TEAM*/
 .our-team .wrapper {
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
 .our-team .team-info {
@@ -269,23 +269,37 @@ html {
 
 .our-team .team-cards {
     display: flex;
-    margin-top: 25px;
+    justify-content: center; /* Horizontally center the flex items */
+    align-items: top; /* Vertically top align the flex items */
+    line-height: 20px;
 }
 
-.our-team .team-cards .team-card{
-    max-width: 25%;
+.our-team .team-cards .team-card {
+    max-width: 20%;
     padding: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .our-team .team-cards .team-card .name{
     font-size: 20px;
     font-weight: 400;
+    color: #414141;
+    margin-bottom: 4px;
+}
+
+.our-team .team-cards .team-card .role{
+    font-size: 16px;
+    font-weight: 200;
+    color: #414141;
+    margin-top: 0;
+    margin-bottom: 4px;
+    
 }
 
 .our-team .team-cards .team-card .fun-fact{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
+    font-style: italic;
     color: #414141;
 }
 
@@ -295,7 +309,7 @@ html {
 }
 
 .our-team .team-cards .team-card .team-social img{
-    width: 20px;
+    width: 25px;
     height: auto;
 }
 /*END OF OUR TEAM*/

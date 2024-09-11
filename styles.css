@@ -270,7 +270,7 @@ html {
 .trust-bar .trust-list .trust-item {
     height: 52px;
     width: auto;
-    padding: 13px 20px;
+    padding: 12px 22px;
 }
 
 .trust-bar .trust-list .trust-item img {
@@ -284,12 +284,58 @@ html {
     max-height: 100%;
     transform: scale(1.1);
 }
-
 /* END OF TRUST BAR */
+
+/* CUSTOMER TESTIMONIALS */
+.trust-bar .testimonials {
+    margin: 75px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center the flex items */
+}
+
+.trust-bar .testimonials .customer-card {
+    /* background-color: #CCCCCC; */
+    width: 450px;
+    /* max-width: 60%; */
+    height: 300px;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+}
+
+.trust-bar .testimonials .customer-card .quote {
+    font-size: 18px;
+    align-items: bottom;
+    /* padding: 10px; */
+}
+
+.trust-bar .testimonials .customer-card .customer-name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.trust-bar .testimonials .customer-card .customer-role {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.trust-bar .testimonials .customer-card img {
+    /* background-color: gray; */
+    /* max-height: 50%; */
+    /* max-width: 50%; */
+    height: 25px;
+    width: auto;
+}
+
+/* END OF CUSTOMER TESTIMONIALS */
 
 /*OUR TEAM*/
 .our-team .wrapper {
-    margin: 75px auto;
+    margin: 25px auto;
 }
 
 .our-team .team-info {
@@ -308,6 +354,7 @@ html {
     max-width: 20%;
     padding: 10px;
     margin-bottom: 15px;
+    background-color: beige;
 }
 
 .our-team .team-cards .team-card .name{

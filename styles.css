@@ -243,7 +243,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .our-open-source-engine .daft-diagram .desktop{
@@ -258,7 +258,9 @@ html {
 
 /* TRUST BAR */
 .trust-bar .wrapper {
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .trust-bar .trust-list {
@@ -303,9 +305,6 @@ html {
     padding: 2px 16px;
     text-align: left;
     width: 450px;
-    /* flex: 1; Allows flexibility for the boxes to grow */
-    /* min-width: 400px; Sets a minimum width before wrapping */
-    /* max-width: 30%; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; /* Needed for bottom alignment */
     display: flex;
@@ -319,13 +318,11 @@ html {
 .testimonials .quote-box .quote {
     font-size: 18px;
     margin-bottom: 20px;
-    /* padding: 10px; */
 }
 
 .testimonials .quote-box .quote b{
     font-size: 18px;
     margin-bottom: 20px;
-    /* padding: 10px; */
     font-weight: 600;
     color: #9E03E2;
 }
@@ -336,10 +333,7 @@ html {
     align-items: center;
     width: 100%;
     padding-top: 10px;
-    /* position: absolute; */
-    /* bottom: 20px; */
     border-top: 1px solid #e0e0e0;
-
 }
 
 .testimonials .quote-box .customer-name {
@@ -357,13 +351,8 @@ html {
 }
 
 .testimonials .quote-box .customer-logo {
-    /* background-color: gray; */
-    /* max-height: 50%; */
-    /* max-width: 50%; */
     height: 25px;
     width: auto;
-    /* text-align: right; */
-    /* margin-right: 20px; */
     object-fit: contain;
 }
 

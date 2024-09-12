@@ -258,7 +258,7 @@ html {
 
 /* TRUST BAR */
 .trust-bar .wrapper {
-    margin: 75px auto;
+    margin: 50px auto;
 }
 
 .trust-bar .trust-list {
@@ -290,7 +290,7 @@ html {
 
 /* CUSTOMER TESTIMONIALS */
 .testimonials .wrapper {
-    margin: 75px auto;
+    /* margin: 50px auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -313,12 +313,21 @@ html {
     justify-content: space-between; /* Spaces content evenly */
     height: 275px;
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    margin-bottom: 50px;
 }
 
 .testimonials .quote-box .quote {
     font-size: 18px;
     margin-bottom: 20px;
     /* padding: 10px; */
+}
+
+.testimonials .quote-box .quote b{
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* padding: 10px; */
+    font-weight: 600;
+    color: #9E03E2;
 }
 
 .testimonials .quote-box .customer-info {

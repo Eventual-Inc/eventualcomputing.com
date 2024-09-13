@@ -258,22 +258,19 @@ html {
 
 /* TRUST BAR */
 .trust-bar .wrapper {
-    /* margin: 50px auto; */
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 75px auto;
 }
 
 .trust-bar .trust-list {
     display: flex;
-    justify-content: center; /* Horizontally center the flex items */
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 
 .trust-bar .trust-list .trust-item {
     height: 52px;
     width: auto;
-    padding: 12px 22px;
+    padding: 12px 26px;
 }
 
 .trust-bar .trust-list .trust-item img {
@@ -290,57 +287,25 @@ html {
 
 /* END OF TRUST BAR */
 
-/* CUSTOMER TESTIMONIALS CAROUSEL */
-.carousel {
+/* CUSTOMER TESTIMONIALS */
+
+.testimonials .wrapper {
+    margin: 0px auto 75px;
+}
+
+.testimonials .customer-quotes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 1400px;
-    margin: 10px auto;
-}
-
-.carousel-control {
-    background-color: var(--light-background);
-    opacity: 0.75;
-    color: var(--purple-title-text);
-    border: none;
-    border-radius: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-}
-
-.carousel-control.left {
-    margin-right: 10px;
-}
-
-.carousel-control.right {
-    margin-left: 10px;
-}
-
-.carousel .testimonials {
-    overflow: hidden;
-    width: 80%;
-    position: relative;
-}
-
-.testimonials .carousel-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: calc(100% + 20px); /* Adjust for gap */
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 .testimonials .quote-box {
     flex: 0 0 auto; /* Take up 100% width on mobile */
-    width: 425px;
-    margin: 0 10px;
+    height: 275px;
+    width: 450px;
+    margin: 4px 10px;
     padding: 2px 16px;
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
     text-align: left;
@@ -350,13 +315,14 @@ html {
     position: relative; /* Needed for bottom alignment */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spaces content evenly */
-    height: 275px;
+    justify-content: space-between;
 }
 
 .testimonials .quote-box .quote {
     font-size: 18px;
     margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
 }
 
 .testimonials .quote-box .quote b{
@@ -410,8 +376,8 @@ html {
 
 .our-team .team-cards {
     display: flex;
-    justify-content: center; /* Horizontally center the flex items */
-    align-items: top; /* Vertically top align the flex items */
+    justify-content: center;
+    align-items: top;
     line-height: 20px;
 }
 
@@ -524,7 +490,7 @@ html {
         align-items: center;
     }
 
-    .trust-bar .testimonials {
+    .testimonials .customer-quotes {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -556,7 +522,6 @@ html {
 }
 
 
-
 @media (max-width: 800px) {
     .our-vision .hero-content {
         font-size: 36px;
@@ -569,10 +534,6 @@ html {
 
     .join-us .join-us-content {
         font-size: 24px;
-    }
-
-    .testimonials .quote-box {
-        max-width: 100%;
     }
 
     .our-vision .wrapper {

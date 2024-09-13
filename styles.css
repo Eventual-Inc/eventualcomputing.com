@@ -390,8 +390,8 @@ html {
 }
 
 .testimonials .quote-box .customer-logo {
-    height: 25px;
-    width: auto;
+    max-height: 25px;
+    max-width: 100px;
     object-fit: contain;
 }
 

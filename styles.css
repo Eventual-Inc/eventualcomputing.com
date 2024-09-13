@@ -390,9 +390,10 @@ html {
 }
 
 .testimonials .quote-box .customer-logo {
-    max-height: 25px;
-    max-width: 100px;
+    max-height: 30px;
+    max-width: 125px;
     object-fit: contain;
+    margin-bottom: 5px;
 }
 
 /* END OF CUSTOMER TESTIMONIALS */

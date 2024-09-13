@@ -4,6 +4,8 @@
     <title>Eventual: The Data Warehouse for ML/AI</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The all-in-one platform for modern data workloads across data engineering, machine learning and analytics.">
+    <meta name="keywords" content="data engineering, machine learning, analytics, open source, data warehouse">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
 <body class="body">
     <section class="header">
         <div class="wrapper">
-            <a href="#" class="nav-logo"><img src="assets/eventual.png"/></a>
+            <a href="#" class="nav-logo"><img src="assets/eventual.png" alt="Eventual Logo"/></a>
             <div class="nav-links">
                 <a href="https://blog.getdaft.io/" target="_blank" class="nav-link">Blog</a>
                 <a href="https://jobs.ashbyhq.com/eventualcomputing" target="_blank" class="nav-link">Careers</a>
@@ -84,30 +86,64 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="wrapper">
-            <div class="quote-box">
-                <p class="quote">Amazon uses Daft to manage <b>exabytes of Apache Parquet</b> in our Amazon S3-based data catalog. Daft improved the efficiency of one of our most critical data processing jobs by <b>over 24%, saving over 40,000 years of Amazon EC2 vCPU computing time annually.</b></p>
-                <div class="customer-info">
-                    <div style="text-align: left;">
-                        <p class="customer-name">Patrick Ames</p>
-                        <p class="customer-role">Principal Engineer @ Amazon</p>
-                    </div>
-                    <img src="assets/trust-bar/amazon.png" class="customer-logo">
-                </div>
-            </div>
-            <div class="quote-box">
-                <p class="quote">Daft was incredible at <b>large volumes of abnormally shaped workloads</b> - I pointed it at 16,000 small Parquet files in a self-hosted S3 service and <b>it just worked!</b> It's the data engine built for the cloud and AI workloads.
-                </p>
-                <div class="customer-info">
-                    <div style="text-align: left;">
-                        <p class="customer-name">Tony Wang</p>
-                        <p class="customer-role">Data @ Anthropic, PhD @ Stanford</p>
+    <div class="carousel">
+        <button class="carousel-control left" onclick="prevSlide()">&#10094;</button>
+        <section class="testimonials">
+            <div class="carousel-wrapper">
+                <div class="quote-box">
+                    <p class="quote">Amazon uses Daft to manage <b>exabytes of Apache Parquet</b> in our Amazon S3-based data catalog. Daft improved the efficiency of one of our most critical data processing jobs by <b>over 24%, saving over 40,000 years of Amazon EC2 vCPU computing time annually.</b></p>
+                    <div class="customer-info">
+                        <div style="text-align: left;">
+                            <p class="customer-name">Patrick Ames</p>
+                            <p class="customer-role">Principal Engineer @ Amazon</p>
+                        </div>
+                        <img src="assets/trust-bar/amazon.png" class="customer-logo">
                     </div>
                 </div>
+                <div class="quote-box">
+                    <p class="quote">Daft was incredible at <b>large volumes of abnormally shaped workloads</b> - I pointed it at 16,000 small Parquet files in a self-hosted S3 service and <b>it just worked!</b> It's the data engine built for the cloud and AI workloads.
+                    </p>
+                    <div class="customer-info">
+                        <div style="text-align: left;">
+                            <p class="customer-name">Tony Wang</p>
+                            <p class="customer-role">Data @ Anthropic, PhD @ Stanford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <p class="quote">Daft was incredible at <b>large volumes of abnormally shaped workloads</b> - I pointed it at 16,000 small Parquet files in a self-hosted S3 service and <b>it just worked!</b> It's the data engine built for the cloud and AI workloads.
+                    </p>
+                    <div class="customer-info">
+                        <div style="text-align: left;">
+                            <p class="customer-name">Tony Wang</p>
+                            <p class="customer-role">Data @ Anthropic, PhD @ Stanford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <p class="quote">Daft was incredible at <b>large volumes of abnormally shaped workloads</b> - I pointed it at 16,000 small Parquet files in a self-hosted S3 service and <b>it just worked!</b> It's the data engine built for the cloud and AI workloads.
+                    </p>
+                    <div class="customer-info">
+                        <div style="text-align: left;">
+                            <p class="customer-name">Tony Wang</p>
+                            <p class="customer-role">Data @ Anthropic, PhD @ Stanford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <p class="quote">Daft was incredible at <b>large volumes of abnormally shaped workloads</b> - I pointed it at 16,000 small Parquet files in a self-hosted S3 service and <b>it just worked!</b> It's the data engine built for the cloud and AI workloads.
+                    </p>
+                    <div class="customer-info">
+                        <div style="text-align: left;">
+                            <p class="customer-name">Tony Wang</p>
+                            <p class="customer-role">Data @ Anthropic, PhD @ Stanford</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <button class="carousel-control right" onclick="nextSlide()">&#10095;</button>
+    </div>
 
     <section class="our-team">
         <div class="wrapper">
@@ -217,7 +253,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
 

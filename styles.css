@@ -260,7 +260,7 @@ html {
 .trust-bar .wrapper {
     /* margin: 50px auto; */
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .trust-bar .trust-list {
@@ -290,29 +290,68 @@ html {
 
 /* END OF TRUST BAR */
 
-/* CUSTOMER TESTIMONIALS */
-.testimonials .wrapper {
-    /* margin: 50px auto; */
+/* CUSTOMER TESTIMONIALS CAROUSEL */
+.carousel {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 10px auto;
+}
+
+.carousel-control {
+    background-color: var(--light-background);
+    opacity: 0.75;
+    color: var(--purple-title-text);
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel-control.left {
+    margin-right: 10px;
+}
+
+.carousel-control.right {
+    margin-left: 10px;
+}
+
+.carousel .testimonials {
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+}
+
+.testimonials .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% + 20px); /* Adjust for gap */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .testimonials .quote-box {
+    flex: 0 0 auto; /* Take up 100% width on mobile */
+    width: 425px;
+    margin: 0 10px;
+    padding: 2px 16px;
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    text-align: left;
     border: 1px solid #ccc;
     border-radius: 15px;
-    padding: 2px 16px;
-    text-align: left;
-    width: 450px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; /* Needed for bottom alignment */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Spaces content evenly */
     height: 275px;
-    box-sizing: border-box; /* Ensures padding is included in the total width/height */
-    margin-bottom: 50px;
 }
 
 .testimonials .quote-box .quote {
@@ -512,6 +551,7 @@ html {
     .our-open-source-engine .daft-diagram .desktop{
         max-width: 90%;
     }
+
 }
 
 
@@ -528,6 +568,10 @@ html {
 
     .join-us .join-us-content {
         font-size: 24px;
+    }
+
+    .testimonials .quote-box {
+        max-width: 100%;
     }
 
     .our-vision .wrapper {
@@ -607,10 +651,18 @@ html {
         font-size: 14px;
 
     }
+
+    .quote-box {
+        flex: 0 0 100%;
+    }
 }
 
 @media (max-width: 425px) {
     .nav-links .star-count {
         display: none;
+    }
+
+    .quote-box {
+        flex: 0 0 100%;
     }
 }

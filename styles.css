@@ -43,10 +43,9 @@ html {
 
 /*HEADER*/
 .header {
-    margin-top: 25px;
-    margin-bottom: 100px;
+    margin: 25px 0 100px;
 }
-.header img{
+.header img {
     width: 150px;
     height: auto;
 }
@@ -276,7 +275,7 @@ html {
 .trust-bar .trust-list .trust-item img {
     max-width: 100%;
     max-height: 100%;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
 
 .trust-bar .trust-list .trust-item img:hover {
@@ -295,7 +294,6 @@ html {
 
 .testimonials .customer-quotes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
@@ -304,39 +302,34 @@ html {
 .testimonials .quote-box {
     flex: 0 0 auto; /* Take up 100% width on mobile */
     height: 275px;
-    width: 450px;
-    margin: 4px 10px;
-    padding: 2px 16px;
-    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    width: 400px;
+    margin: 4px 8px;
+    padding: 2px 14px;
     text-align: left;
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Needed for bottom alignment */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .testimonials .quote-box .quote {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
     line-height: 1.4;
 }
 
 .testimonials .quote-box .quote b{
-    font-size: 18px;
-    margin-bottom: 20px;
     font-weight: 600;
-    color: #9E03E2;
+    color: var(--purple-title-text);
 }
 
 .testimonials .quote-box .customer-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding-top: 10px;
     border-top: 1px solid #e0e0e0;
 }
@@ -359,7 +352,6 @@ html {
     max-height: 30px;
     max-width: 125px;
     object-fit: contain;
-    margin-bottom: 5px;
 }
 
 /* END OF CUSTOMER TESTIMONIALS */
@@ -483,16 +475,16 @@ html {
 
 /*RESPONSIVE*/
 
+@media (max-width: 1400px) {
+    .testimonials .customer-quotes {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 925px) {
     .trust-bar .trust-list {
         display: flex;
         flex-direction: row;
-        align-items: center;
-    }
-
-    .testimonials .customer-quotes {
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
 

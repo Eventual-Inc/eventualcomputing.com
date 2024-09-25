@@ -294,17 +294,22 @@ html {
 
 .testimonials .customer-quotes {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     margin-top: 25px;
-}
+    flex: 1;
+    height: 300px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+} 
 
 .testimonials .customer-quotes .quote-box {
-    /* flex: 0 0 auto; Take up 100% width on mobile */
-    height: 275px;
-    width: 400px;
+    flex: 0 0 auto; /* Take up 100% width on mobile */
+    height: 285px;
+    width: 425px;
     margin: 4px 8px;
-    padding: 2px 14px;
+    padding: 2px 16px;
     text-align: left;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -312,11 +317,11 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 
 .testimonials .quote-box .quote {
     font-size: 16px;
-    margin-bottom: 20px;
     letter-spacing: 0.5px;
     line-height: 1.4;
 }
@@ -332,6 +337,8 @@ html {
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #e0e0e0;
+    margin-bottom: 8px;
+    height: 80px;
 }
 
 .testimonials .quote-box .customer-name {
@@ -346,6 +353,7 @@ html {
     color: gray;
     margin-top: 0px;
     margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .testimonials .quote-box .customer-logo {
@@ -474,12 +482,6 @@ html {
 
 
 /*RESPONSIVE*/
-
-@media (max-width: 1400px) {
-    .testimonials .customer-quotes {
-        flex-wrap: wrap;
-    }
-}
 
 @media (max-width: 925px) {
     .trust-bar .trust-list {

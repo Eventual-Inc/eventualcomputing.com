@@ -617,9 +617,9 @@ html {
 
     .testimonials .customer-quotes .quote-box {
         height: 320px;
-        width: 325px;
-        margin-left: 5px;
-        margin-right: 5px;
+        width: 320px;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
     .testimonials .customer-quotes .quote-box .quote {
@@ -641,7 +641,6 @@ html {
 
     .testimonials .customer-quotes .quote-box .customer-role {
         font-size: 12px;
-        /* line-height: 1; */
     }
 
     .testimonials .customer-quotes .quote-box .customer-logo {

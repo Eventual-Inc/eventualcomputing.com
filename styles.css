@@ -40,6 +40,18 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ANNOUNCEMENT BANNER */
+
+.announcement, .announcement a {
+    background-color: var(--purple-title-text);
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-radius: 0.3em;
+  }
+
 
 /*HEADER*/
 .header {
@@ -78,7 +90,7 @@ html {
 }
 
 .nav-links #stargazers-count {
-    background: #fff; 
+    background: #fff;
     color: #24292f;
     border: 1px solid #c5c5c5;
     border-radius: 0 0.25em 0.25em 0;
@@ -92,7 +104,7 @@ html {
 }
 
 .nav-links #star {
-    background: #ebf0f4; 
+    background: #ebf0f4;
     color: #24292f;
     border: 1px solid #c5c5c5;
     border-right: none;
@@ -105,7 +117,7 @@ html {
 }
 
 .nav-links #star:hover {
-    background: #e3e8ec; 
+    background: #e3e8ec;
 }
 
 .nav-links #stargazers-count:hover {
@@ -122,7 +134,7 @@ html {
     background-size: 16px 16px;
     margin-right: 5px;
     display: inline-block;
-    width: 16px; 
+    width: 16px;
     height: 16px;
     content: "";
 
@@ -212,7 +224,7 @@ html {
     transition-duration: 0.3s;
     padding: 15px 25px;
  }
- 
+
  .btn.light:hover {
      color: var(--light-background);
      background-color: var(--body-black);
@@ -220,7 +232,7 @@ html {
 
  .btn-square {
     padding: 25px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     border-radius: 15px;
     display: inline-block;
     background-color: #6953F3;
@@ -302,7 +314,7 @@ html {
     height: 300px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-} 
+}
 
 .testimonials .customer-quotes .quote-box {
     flex: 0 0 auto; /* Take up 100% width on mobile */
@@ -400,7 +412,7 @@ html {
     color: #414141;
     margin-top: 0;
     margin-bottom: 4px;
-    
+
 }
 
 .our-team .team-cards .team-card .fun-fact{
@@ -465,7 +477,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px; 
+    gap: 35px;
     margin-top: 20px;
 }
 
@@ -561,11 +573,11 @@ html {
         width: 100px;
         height: auto;
     }
-    
+
     .footer-social {
-        gap: 20px; 
+        gap: 20px;
     }
-    
+
     .footer-social .social-image{
         width: 20px;
         height: 20px;
@@ -600,9 +612,9 @@ html {
 
     .nav-links #stargazers-count {
         font-size: 14px;
-    
+
     }
-    
+
     .nav-links #star {
         font-size: 14px;
 
